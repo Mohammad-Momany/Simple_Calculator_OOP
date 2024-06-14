@@ -10,6 +10,11 @@ private:
 
 public:
 
+    clsCalculator(int initNumber)
+    {
+        _Result = initNumber;
+    }
+
     void Clear()
     {
         _Result = 0;
@@ -60,7 +65,7 @@ public:
 
 int main()
 {
-    clsCalculator Calculator;
+    clsCalculator Calculator(0);
 
     Calculator.Add(10);
     Calculator.PrintResult();
